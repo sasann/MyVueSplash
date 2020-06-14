@@ -20,10 +20,15 @@ https://www.hypertextcandy.com/vue-laravel-tutorial-introduction
   - 写真削除 API（追加機能）
 
 - Vue
+
   - VueRouter
   - Vuex
+
     - store を用いた状態管理
+
       - state の表示
       - getters の表示
       - state の更新履歴の表示
       - state 更新履歴の特定時点に状態を戻す
+
+      以上
