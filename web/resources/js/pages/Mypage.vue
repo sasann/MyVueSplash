@@ -33,13 +33,17 @@ export default {
   data() {
     return {
       photos: [],
-      currentPage: 0,
-      lastPage: 0
+      currentPage: 1,
+      lastPage: 100
     };
   },
   methods: {
     async fetchPhotos() {
-      const response = await axios.get(`/api/photos/?page=${this.page}`);
+      const user_name = this.$store.getters["auth/username"];
+
+      const response = await axios.get(
+        `/api/photos/myphotos?username=${user_name}&page=${this.page}`
+      );
 
       if (response.status !== OK) {
         this.$store.commit("error/setCode", response.status);
@@ -47,8 +51,8 @@ export default {
       }
 
       this.photos = response.data.data;
-      this.currentPage = response.data.current_page;
-      this.lastPage = response.data.last_page;
+      //this.currentPage = response.data.current_page;
+      //this.lastPage = response.data.last_page;
     },
     onLikeClick({ id, liked }) {
       if (!this.$store.getters["auth/check"]) {
