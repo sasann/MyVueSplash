@@ -24,7 +24,7 @@ https://www.hypertextcandy.com/vue-laravel-tutorial-introduction
   - いいね API(作成中)
   - マイページ API（作成中）
 
-* Vue
+- Vue
 
   - VueRouter
   - Vuex
@@ -36,17 +36,15 @@ https://www.hypertextcandy.com/vue-laravel-tutorial-introduction
       - state の更新履歴の表示
       - state 更新履歴の特定時点に状態を戻す
 
-* Docker での開発環境構築
+- Docker での開発環境構築
 
   - コマンド
     - Docker 起動 : docker-compose up -d
     - サーバー立ち上げ : php artisan serve --host 0.0.0.0 --port 8081
 
-* node.js(フロントエンドのビルド)
+- node.js(フロントエンドのビルド)
 
   - コマンド
     - npm run watch : 一度コンパイルが走った後に監視モードに入り、ファイルの変更があるたびに自動的に再度コンパイルが実行
 
-* AWS S3 を用いた写真アッップロード保管
-
-  以上
+* AWS S3 を用いた写真アップロード保管
